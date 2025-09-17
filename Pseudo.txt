@@ -1,0 +1,16 @@
+first feature request
+=====================
+-create the area function that calculates the area of the
+rectangle by using the conventional formula of width multiplied by
+height. 
+	-The function takes unsigned 32 integer type parameters 
+	that represent the width and height. 
+	-At the end of the scope, the function then returns an 
+	unsigned 32 integer type value that represents as the 
+	rectangle's area.
+
+-create a main function
+	-inside the scope of the main function, test the area
+	function
+	-out the message
+	'The area of the rectangle is (area) square pixels'
