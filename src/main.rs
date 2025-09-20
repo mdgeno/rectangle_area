@@ -1,51 +1,51 @@
-//create rectangle struct.
-//apply derived debug features to test how the vairables work.
+use std::io;
+
 #[derive(Debug)]
 struct Rectangle{
 	width: u32,
 	height: u32,
 }
 
-//create an implementation block for the area method
 impl Rectangle{
-
-	//when creating a method in the implementation block, 
-	//type in the long form of the required initial self 
-	//parameter.
 	fn area(self: &Self) -> u32{
 		self.width*self.height
-	}	
-		
+	}
+
+	fn hold(self: &Self, other: &Rectangle) -> bool{
+		self.width>other.width && self.height>other.height
+	}
 }
 
-//create a main function
 fn main(){
 
-	//initialise an instance of the Rectangle struct.
+	let mut user_input = String::new();
+	io::stdin().read_line(&mut user_input).expect("enter valid input");
+
+	println!("user input was: {}", &user_input);
+
 	let rect1 = Rectangle{
-		width: dbg!(30*2),
+		width: 30,
 		height: 50,
 	};	
+	let rect2 = Rectangle{
+		width: 10,
+		height: dbg!(40*1),
+	};
+	let rect3 = Rectangle{
+		width: 60,
+		height: 45,
+	};
 
-	//print line macro the text ' ' and utilising the 
-	//implemented method of the Rectangle struct.
-	println!("The area of the rectangle is {}", rect1.area());
-	
+	println!("Can rect1 hold rect2? {}", rect1.hold(&rect2));
+	println!("Can rect1 hold rect3? {}", rect1.hold(&rect3));
+
 	println!(" ");
 
-	//use normal :? output and :#? pretty print
-	println!("the value of rect1 is {rect1:?}");
-	println!("the value of rect1 with pretty print {rect1:#?}");
+	println!("derived standard format of rectangle 1 variable {rect1:?}");
+	println!("derived standard format of rectangle 2 variable {rect2:?}");
+	println!("derived pretty print format of rectangle 3 variable {rect3:#?}");
 
-	//use the dbg! macro
-	dbg!(rect1.width);
+	println!(" ");
+
+	dbg!(rect2.height);
 }
-
-
-
-
-
-
-
-
-
