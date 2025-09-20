@@ -14,3 +14,63 @@ height.
 	function
 	-out the message
 	'The area of the rectangle is (area) square pixels'
+
+
+-create a Rectangle struct which has two u32 integer type features
+that represent width and height in its fields.
+
+-create an implementation block of the Rectangle struct that has
+a method to calculate the area of an instance of a Rectangle struct,
+
+-create a main function.
+
+-inside the main function create 3 instances of Rectangle Structs.
+
+-run a print line macro of comparing the 1st Rectangle Struct
+instance variable with the 2nd Rectangle Struct instance variable.
+run a print line macro of comparing the 1st Rectangle Struct
+instance variable with the 3rd Rectangle Struct instance variable.
+
+-test the 1st and 2nd Rectangle Struct instance variables by 
+printing the values in standard format through the use of the 
+derived trait. Then test the values of the 3rd trait using the 
+pretty print format of the Derived trait.
+
+-run the debug marco of the height field of the 2nd Rectangle
+instance variable.
+
+-add another method that compares a certain Rectangle struct in
+the method parameter against the Rectangle struct calling the 
+method.
+
+-create a pull request that suggests
+to add another method that compares a certain Rectangle struct in
+the method parameter against the Rectangle struct calling the 
+method.
+====================
+
+
+-add the square associated function that takes in an unsigned 32
+integer type parameter and returns Self which is the representation
+of the Rectangle struct of the implementation block.
+-create a user input to place in associated function
+
+
+====================
+CONTINUE HERE! create a pull request
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
