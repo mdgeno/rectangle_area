@@ -67,7 +67,7 @@ fn main(){
 	
 		let new_square = Rectangle::square(user_in);
 
-		println!("Checking the value of the new_square variable: {new_square:?}");
+		println!("Checking the value of the new_square variable: {new_square:#?}");
 	
 		break;
 	}   
